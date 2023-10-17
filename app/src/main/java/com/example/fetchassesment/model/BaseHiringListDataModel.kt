@@ -1,0 +1,3 @@
+package com.example.fetchassesment.model
+
+abstract class BaseHiringListDataModel

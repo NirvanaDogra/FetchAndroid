@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="listModel"
+            type="com.example.fetchassesment.model.SectionListDataModel" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/small_10"
+            android:setNonStringText="@{listModel.id}"
+            android:textColor="@android:color/holo_red_dark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@{listModel.listId}"
+            android:padding="@dimen/small_10"
+            android:text="@{listModel.listId}"
+            android:textColor="@android:color/holo_green_dark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@{listModel.name}"
+            android:padding="@dimen/small_10"
+            android:text="@{listModel.name}"
+            android:textColor="@android:color/holo_green_dark" />
+
+    </LinearLayout>
+</layout>
